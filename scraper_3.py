@@ -5,7 +5,7 @@ import json
 
 
 # ==========================================
-# STEP 16 + 17
+# 1.req and response
 # Requests + BeautifulSoup
 # Website HTML/XML 
 # ==========================================
@@ -26,7 +26,7 @@ soup = BeautifulSoup(response.content, "xml")
 
 
 # ==========================================
-# STEP 18
+# STEP 2
 # Article scraping
 # ==========================================
 
@@ -66,7 +66,7 @@ for article in articles:
 
 
     # ==========================================
-    # STEP 21
+    # STEP 3
     # Dictionary 
     # ==========================================
 
@@ -95,7 +95,7 @@ for article in data:
 
 
 # ==========================================
-# STEP 22
+# STEP save
 # JSON Save
 # ==========================================
 
@@ -113,10 +113,9 @@ with open(
     )
 
 
-# ==========================================
-# STEP 22
+
 # CSV Save
-# ==========================================
+
 
 with open(
     "bbc_news.csv",
@@ -145,3 +144,25 @@ with open(
 print("\nData saved successfully!")
 print("bbc_news.json")
 print("bbc_news.csv")
+
+
+
+# expect output
+# Status: 200
+# Total articles: 20
+
+# -------------------------
+# Title: Example BBC News Headline
+# Link: https://www.bbc.com/news/...
+# Description: ...
+# Published: Fri, 18 Sep 2026 ...
+
+# -------------------------
+# Title: Another BBC News Headline
+# Link: https://www.bbc.com/news/...
+# Description: ...
+# Published: Fri, 18 Sep 2026 ...
+
+# Data saved successfully!
+# bbc_news.json
+# bbc_news.csv
