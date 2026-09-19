@@ -82,7 +82,7 @@ for article in articles:
 
 # ==========================================
 # Output
-# ==========================================
+
 
 for article in data:
 
@@ -97,7 +97,7 @@ for article in data:
 # ==========================================
 # STEP save
 # JSON Save
-# ==========================================
+
 
 with open(
     "bbc_news.json",
@@ -147,7 +147,7 @@ print("bbc_news.csv")
 
 
 
-# expect output
+# expect output..........................................
 # Status: 200
 # Total articles: 20
 
